@@ -1,0 +1,289 @@
+body
+    overflow-x: hidden
+    font-family: "Ubuntu Condensed", sans-serif
+
+    h1
+        font-family: "Ubuntu Condensed", sans-serif
+
+    a
+        cursor: pointer
+
+    code 
+        font-family: Microsoft JhengHei, Heiti SC, Heiti TC
+        background: #efefef
+        display: block
+        padding: 16px
+        letter-spacing: 1px
+
+
+#boarding
+    border: 1px solid #dcf6fc
+    border-bottom: #002e73
+    color: #0068b7
+    background-color: #dcf6fc
+    height: 100%
+    width: 100%
+    margin: 0
+    position: relative
+    text-align: center
+
+    h1
+        font-size: 72pt
+        line-height: 72pt
+
+    p
+        font-size: 24pt
+
+        img
+            vertical-align: text-top
+
+    .bubble
+        background: #fff
+        width: 8vw
+        height: 8vw
+        line-height: 8vw
+        border-radius: 50%
+        position: absolute
+        color: #0099cc
+        opacity: 0
+        display: none
+        z-index: 6
+        vertical-align: middle
+
+        p
+            font-weight: bold
+            font-size: 16pt
+
+        a
+            text-decoration: none
+            color: #0099cc
+
+        a:hover
+            border-bottom: 1px dotted #fff45c
+            color: #fff45c
+
+    .bubble.link
+        z-index: 6
+
+    .logo
+        height: 180px
+        position: relative
+        top: 50%
+        margin-top: -90px
+        z-index: 100
+
+#menu
+    color: #fff
+    background-color: #0099cc
+    min-height: 100%
+    height: auto
+    width: 24%
+    margin: 0
+    float: left
+    z-index: 100 !important
+    -webkit-box-shadow: 7px 0px 5px -3px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 7px 0px 5px -3px rgba(0, 0, 0, 0.3)
+    box-shadow: 7px 0px 5px -3px rgba(0, 0, 0, 0.3)
+
+    @media screen and (max-width: 1024px)
+        width: 90%
+        left: -100%
+        display: none
+
+    ul
+        text-align: right
+
+    a
+        color: #fff
+        text-decoration: none
+        font-size: 18pt
+        line-height: 36pt
+
+    a:hover
+        border-bottom: 1px dashed #fff
+
+    a.active
+        font-size: 36pt
+        line-height: 48pt
+        font-weight: bold
+
+    @media screen and (max-width: 1280px)
+        a
+            font-size: 16pt
+            line-height: 20pt
+
+        a.active
+            font-size: 20pt
+            line-height: 32pt
+
+
+    @media screen and (max-width: 1024px)
+        a
+            font-size: 12pt
+            line-height: 18pt
+
+        a.active
+            font-size: 18pt
+            line-height: 30pt
+
+    #menu-top
+        margin-top: 16px
+        margin-right: 16px
+
+    .menu_logo
+        text-align: center
+        margin-top: 45%
+        color: #0068b7
+        background: rgba(255, 255, 255, 0.6)
+        padding: 5% 0
+
+        h1
+            font-size: 48pt
+            line-height: 48pt
+
+        p
+            font-size: 16pt
+            font-family: "Nothing You Could Do"
+
+            img
+                vertical-align: text-top
+
+#intr, #manual
+    background-color: #fff
+    color: #000
+    min-height: 100%
+    height: auto
+    width: 75%
+    margin: 0
+    position: relative
+    text-align: center
+    float: right
+    margin-bottom: 16px
+
+    @media screen and (max-width: 1024px)
+        width: 100%
+        padding-top: 42px
+        min-height: 1px
+
+    h1, p
+        text-align: left
+        color: #0099cc
+
+    p
+        font-size: 24pt
+        line-height: 48pt
+
+    h1
+        font-size: 36pt
+        line-height: 64pt
+
+    textarea:focus, input:focus
+        outline: 0
+
+    textarea, input
+        border: none
+        border-bottom: 2pt solid #0099cc
+        line-height: 24pt
+        font-size: 24pt
+
+    .textblock
+        width: 90%
+        margin: 32px auto
+
+    .btn
+        background-color: #0099cc
+        font-weight: bold
+        color: #fff
+        padding: 2pt 6pt
+        display: inline-block
+        margin: 16px 0
+
+    @media screen and (max-width: 1280px)
+        p
+            font-size: 16pt
+            line-height: 30pt
+
+        h1
+            font-size: 30pt
+            line-height: 54pt
+
+        textarea:focus, input:focus
+            outline: 0
+
+        textarea, input
+            border: none
+            border-bottom: 3pt solid #0099cc
+            line-height: 16pt
+            font-size: 16pt
+
+        .textblock
+            width: 90%
+            margin: 20px auto
+
+        .btn
+            background-color: #0099cc
+            font-weight: bold
+            color: #fff
+            padding: 2pt 4pt
+            display: inline-block
+            margin: 12px 0
+
+
+    @media screen and (max-width: 1024px)
+        p
+            font-size: 14pt
+            line-height: 26pt
+
+        h1
+            font-size: 24pt
+            line-height: 40pt
+
+        textarea:focus, input:focus
+            outline: 0
+
+        textarea, input
+            border: none
+            border-bottom: 2pt solid #0099cc
+            line-height: 14pt
+            font-size: 14pt
+
+        .textblock
+            width: 90%
+            margin: 16px auto
+
+        .btn
+            background-color: #0099cc
+            font-weight: bold
+            color: #fff
+            padding: 1pt 3pt
+            display: inline-block
+            margin: 8px 0
+
+
+#intr
+
+#manual
+    text-align: left
+
+    img
+        padding-top: 3%
+        width: 98%
+
+    a
+        color: #0099cc
+        text-decoration: none
+        font-weight: bold
+
+    a:hover
+        border-bottom: 1px dashed #0099cc
+
+#footer
+    p
+        font-size: 12pt
+        line-height: 15pt
+        text-align: center
+        margin-top: 64px
+        max-width: 98%
+        width: 100%
+        display: block
+        font-family: "Ubuntu Condensed", sans-serif

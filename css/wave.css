@@ -1,0 +1,128 @@
+#ocean {
+    z-index: 100;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    background: #7ecef4;
+    opacity: 0.5;
+    display: inline-block;
+    height: 35%;
+    width: 10px;
+    position: absolute;
+    z-index: 5 !important;
+    -webkit-animation-name: dostuff;
+    -webkit-animation-duration: 2.74159s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.wave_middle {
+    position: absolute;
+    bottom: 0;
+    background: #0068b7;
+    opacity: 0.3;
+    display: inline-block;
+    height: 27%;
+    width: 10px;
+    position: absolute;
+    z-index: 5 !important;
+    -webkit-animation-name: dostuff_mid;
+    -webkit-animation-duration: 3.42s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.wave_bottom {
+    position: absolute;
+    bottom: 0;
+    background: #002e73;
+    opacity: 0.8;
+    display: inline-block;
+    height: 17%;
+    width: 10px;
+    position: absolute;
+    z-index: 5 !important;
+    -webkit-animation-name: dostuff_bot;
+    -webkit-animation-duration: 2.54s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.wave_light {
+    position: absolute;
+    bottom: 10%;
+    background: #fff;
+    opacity: 0.3;
+    display: inline-block;
+    height: 32%;
+    width: 10px;
+    position: absolute;
+    z-index: 5 !important;
+    -webkit-animation-name: dostuff_light;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+
+
+@-webkit-keyframes dostuff {
+    0% {
+        height: 35%;
+    }
+
+    50% {
+        height: 48%;
+    }
+
+    100% {
+        height: 35%;
+    }
+}
+
+@-webkit-keyframes dostuff_mid {
+    0% {
+        height: 27%;
+    }
+
+    50% {
+        height: 36%;
+    }
+
+    100% {
+        height: 27%;
+    }
+}
+
+@-webkit-keyframes dostuff_bot {
+    0% {
+        height: 17%;
+    }
+
+    50% {
+        height: 23%;
+    }
+
+    100% {
+        height: 17%;
+    }
+}
+
+@-webkit-keyframes dostuff_light {
+    0% {
+        height: 1%;
+        bottom: 31%;
+    }
+
+    50% {
+        height: 4%;
+        bottom: 35%;
+    }
+
+    100% {
+        height: 1%;
+        bottom: 31%;
+    }
+}
